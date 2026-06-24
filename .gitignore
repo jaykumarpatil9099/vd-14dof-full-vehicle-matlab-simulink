@@ -1,0 +1,30 @@
+# MATLAB / Simulink
+*.asv
+*.autosave
+*.slxc
+*.slx.r*
+*.slx.original
+slprj/
+sccprj/
+*.mexa64
+*.mexmaci64
+*.mexw64
+*.mex
+
+# MATLAB outputs you don't want committed
+*.fig.bak
+codegen/
+*.mlautosave
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Large generated outputs (keep figures/ tracked manually)
+06_results/data/*.mat
+!06_results/data/.gitkeep
