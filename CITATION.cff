@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "14-DoF full-vehicle model (MATLAB & Simulink)"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Patil
+    given-names: Jaykumar
+repository-code: "https://github.com/jaykumarpatil9099/vd-14dof-full-vehicle-matlab-simulink"
+license: MIT
+keywords: [vehicle dynamics, 14-DoF, simulink, multibody, pacejka]

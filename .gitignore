@@ -28,3 +28,6 @@ desktop.ini
 # Large generated outputs (keep figures/ tracked manually)
 06_results/data/*.mat
 !06_results/data/.gitkeep
+
+# MATLAB build tool cache
+.buildtool/
