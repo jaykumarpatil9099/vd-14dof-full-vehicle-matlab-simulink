@@ -8,7 +8,7 @@ classdef Dof14Test < matlab.unittest.TestCase
     end
 
     methods (TestClassSetup)
-        function setup(tc)
+        function readParameters(tc)
             tc.Root = fileparts(fileparts(mfilename("fullpath")));
             tc.P = loadParameters(fullfile(tc.Root, "02_data", "parameters", ...
                 "Complete_vehicle_simulation_dof14_model_parameters.m"));
@@ -37,7 +37,7 @@ classdef Dof14Test < matlab.unittest.TestCase
         end
 
         function axleDistancesSumToWheelbase(tc)
-            tc.assumeTrue(all(isfield(tc.P, ["a", "b", "L"])));
+            tc.assumeTrue(all(isfield(tc.P, {'a', 'b', 'L'})));
             tc.verifyEqual(tc.P.a + tc.P.b, tc.P.L, "RelTol", 1e-6);
         end
 
